@@ -1,7 +1,7 @@
 clear
 clc
-disp('Nama : Nada Fatiyyah Azkia')
-disp('NIM  : 11180170000084')
+disp('Nama : Nadazkia')
+disp('NIM  : ')
 disp('======================================================')
 disp('          Metode Diferensiasi Selisih Mundur          ')
 disp('======================================================')
