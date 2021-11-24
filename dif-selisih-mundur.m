@@ -27,6 +27,21 @@ for i=0:n
     sigma=sigma+e;
     fprintf('%d    %f    %f    %f    %f    \n', i,x,fm,fek,e)
 end
+
+%GRAFIK
+x=a:h:b;
+hold on
+grid on;
+
+dff=f_eksak(x); %Turunan Eksak
+plot(x,dff,'b-');
+ftt=f_hampiran(x,h);
+plot(x,ftt,'-r');
+
+legend('f Hampiran','f Eksak');
+hold off
+
+%SELESAIIIII
 rata_error= sigma/(i+1);
 disp('======================================================')
 fprintf('Rata-rata error = %f \n', rata_error)
