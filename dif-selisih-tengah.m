@@ -14,7 +14,7 @@ h=input('h = ');
 n=(b-a)/h;
 sigma=0;
 f = @(x) 5*x.^3; %Fungsi
-df = @(x) 15*x.^2; %Turunan Pertama
+f_eksak = @(x) 15*x.^2; %Turunan Pertama
 f_hampiran = @(x,h) (f(x+h)-f(x-h))/(2*h); %Metode Selisih Tengah
 
 %TABELNYA
@@ -24,7 +24,7 @@ disp('======================================================')
 for i=0:n
     x=a+i*h;
     ft=f_hampiran(x,h);
-    fek=df(x);
+    fek=f_eksak(x);
     e=abs(fek-ft);
     sigma=sigma+e;
     fprintf('%d    %f    %f    %f    %f    \n', i,x,ft,fek,e)
@@ -35,7 +35,7 @@ x=a:h:b;
 hold on
 grid on;
 
-dff=df(x); %Turunan Eksak
+dff=f_eksak(x); %Turunan Eksak
 plot(x,dff,'b-');
 ftt=f_hampiran(x,h);
 plot(x,ftt,'-r');
