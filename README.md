@@ -1,5 +1,5 @@
 # Matlab
-Ini Source Code Matlab Selama Kuliah
+Ini Source Code Matlab Selama Kuliah Metode Numerik
 Jangan lupa 'star' nya
 
 Saya senang berbagi. Untuk dipelajari, bukan untuk disalahgunakan apalagi digunakan saat ujian :"
